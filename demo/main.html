@@ -75,5 +75,7 @@
 </html>
 <script src="/src/minilect.min.js">
 <script>
-    let minilect = new selector({target: $('.custom_select'), renewSearch: false, enableSearch: true}})
+    $(window).on("load", () => {
+        window.minilect = new selector({target: $('.custom_select'), renewSearch: false, enableSearch: true}})
+    })
 </script>
