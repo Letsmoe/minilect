@@ -7,3 +7,6 @@ MiniLect is to my knowledge the smallest available select alternative apart from
 
 # Functionality
 MiniLect allows you to tune into multiple events like a HoverNode event which we for example use to show a preview at realtime. The obligatory "change" event and events that are triggered once the select menu opens and closes. FUrthermore you can customize the search function and use shorthand descriptors for the select like setting `o` for options instead of `option` allowing you to write less code resulting in a faster loading page.
+
+# Maintain
+MiniLect is steadily improved and maintained by [continuum-ai](https://continuum-ai.de). The code is not optimized to it's best, we'll work on that. Performance of MiniLect though is very much good enough on any device it has been tested on.
