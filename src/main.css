@@ -54,17 +54,47 @@ body {
     cursor: not-allowed;
 }
 
-.custom_select_details opt, .custom_select_details group {
+.custom_select_details opt {
     display: block;
     padding: 4px 20px;
 }
 
 .custom_select_details group {
-    box-shadow: 0 2px 1px 0 #00000020, 0 -2px 1px 0 #00000020;
-    background: rgb(99,99,99);
-    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom_select_details group::before {
+    content: attr(label);
+    position: relative;
     font-size: 16px;
+    padding: 0 10px;
+    margin-bottom: 4px;
+    height: 30px;
+    display: flex;
+    align-items: center;
     font-style: italic;
+    background: rgb(99,99,99);
+    box-shadow: 0 2px 1px 0 #00000020, 0 -2px 1px 0 #00000020;
+}
+
+.custom_select_details .hidden_by_search {
+    display: none;
+}
+
+.custom_select_details group::after {
+    content: "\25BE";
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.custom_select_details group.is_closed * {
+    display: none;
+}
+
+.custom_select_details group.is_closed::after {
+    transform: rotateX(90deg);
 }
 
 .custom_select_details opt.active {
