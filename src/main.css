@@ -1,11 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.value_inner[data-search-term] {
+.value_inner {
     display: flex;
-    align-items: center;    
+    align-items: center;  
+    margin-bottom: 0;  
 }
 
 .value_inner[data-search-term]::after {
@@ -49,12 +45,12 @@ body {
     max-height: 800px;
 }
 
-.custom_select_details opt[disabled] {
+.custom_select_details option[disabled] {
     color: #888;
     cursor: not-allowed;
 }
 
-.custom_select_details opt {
+.custom_select_details option {
     display: block;
     padding: 4px 20px;
 }
@@ -97,6 +93,6 @@ body {
     transform: rotateX(90deg);
 }
 
-.custom_select_details opt.active {
+.custom_select_details option.active {
     background: rgb(107,107,107);
 }
